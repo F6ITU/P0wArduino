@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name ventirad)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+  (lib (name kk)(type KiCad)(uri "$(KIPRJMOD)\\kk")(options "")(descr ""))
+  (lib (name cap_pol)(type KiCad)(uri "$(KIPRJMOD)\\cap_pol")(options "")(descr ""))
+)
