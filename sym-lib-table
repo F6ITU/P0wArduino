@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ventirad-rescue)(type Legacy)(uri ${KIPRJMOD}/ventirad-rescue.lib)(options "")(descr ""))
+  (lib (name 78M05G)(type Legacy)(uri ${KIPRJMOD}/Libs/78M05/78M05G.lib)(options "")(descr ""))
+  (lib (name arduino_nano)(type Legacy)(uri ${KIPRJMOD}/Libs/Arduino/arduino_nano.lib)(options "")(descr ""))
+)

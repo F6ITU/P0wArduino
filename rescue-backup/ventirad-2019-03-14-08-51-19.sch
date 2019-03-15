@@ -1,6 +1,17 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:ventirad-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:interface
+LIBS:display
+LIBS:opto
+LIBS:arduino_nano
 LIBS:ventirad-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +26,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ventirad-rescue:GND #PWR01
+L GND #PWR01
 U 1 1 56E0175D
 P 800 1000
 F 0 "#PWR01" H 800 750 50  0001 C CNN
@@ -26,7 +37,7 @@ F 3 "" H 800 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:+12V #PWR02
+L +12V #PWR02
 U 1 1 56E017A1
 P 1100 1000
 F 0 "#PWR02" H 1100 850 50  0001 C CNN
@@ -37,7 +48,7 @@ F 3 "" H 1100 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:PWR_FLAG #FLG03
+L PWR_FLAG #FLG03
 U 1 1 56E0187D
 P 800 950
 F 0 "#FLG03" H 800 1045 50  0001 C CNN
@@ -48,7 +59,7 @@ F 3 "" H 800 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:PWR_FLAG #FLG04
+L PWR_FLAG #FLG04
 U 1 1 56E0189B
 P 1100 950
 F 0 "#FLG04" H 1100 1045 50  0001 C CNN
@@ -65,7 +76,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 950  1100 1000
 $Comp
-L ventirad-rescue:CONN_01X04 P8
+L CONN_01X04 P8
 U 1 1 56E0E58A
 P 3650 3800
 F 0 "P8" H 3650 4050 50  0000 C CNN
@@ -76,7 +87,7 @@ F 3 "" H 3650 3800 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR05
+L GND #PWR05
 U 1 1 56E0EB83
 P 5000 5100
 F 0 "#PWR05" H 5000 4850 50  0001 C CNN
@@ -87,7 +98,7 @@ F 3 "" H 5000 5100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR06
+L GND #PWR06
 U 1 1 56E0EB89
 P 5100 5100
 F 0 "#PWR06" H 5100 4850 50  0001 C CNN
@@ -98,7 +109,7 @@ F 3 "" H 5100 5100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR07
+L GND #PWR07
 U 1 1 56E0EBC1
 P 3900 3950
 F 0 "#PWR07" H 3900 3700 50  0001 C CNN
@@ -113,7 +124,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 5000 5100 5100
 $Comp
-L ventirad-rescue:LM7805-RESCUE-ventirad U1
+L LM7805-RESCUE-ventirad U1
 U 1 1 56E13721
 P 3300 1750
 F 0 "U1" H 3450 1554 60  0000 C CNN
@@ -124,7 +135,7 @@ F 3 "" H 3300 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CP C2
+L CP C2
 U 1 1 56E137B2
 P 2800 1850
 F 0 "C2" H 2825 1950 50  0000 L CNN
@@ -135,7 +146,7 @@ F 3 "" H 2800 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C1
+L C C1
 U 1 1 56E13A8B
 P 2550 1850
 F 0 "C1" H 2575 1950 50  0000 L CNN
@@ -146,7 +157,7 @@ F 3 "" H 2550 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C3
+L C C3
 U 1 1 56E13B0E
 P 3800 1850
 F 0 "C3" H 3825 1950 50  0000 L CNN
@@ -157,7 +168,7 @@ F 3 "" H 3800 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C4
+L C C4
 U 1 1 56E14FA2
 P 4050 1850
 F 0 "C4" H 4075 1950 50  0000 L CNN
@@ -168,7 +179,7 @@ F 3 "" H 4050 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:+12V #PWR08
+L +12V #PWR08
 U 1 1 56E15025
 P 2350 1700
 F 0 "#PWR08" H 2350 1550 50  0001 C CNN
@@ -179,7 +190,7 @@ F 3 "" H 2350 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR09
+L GND #PWR09
 U 1 1 56E154E5
 P 3300 2100
 F 0 "#PWR09" H 3300 1850 50  0001 C CNN
@@ -190,7 +201,7 @@ F 3 "" H 3300 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR010
+L GND #PWR010
 U 1 1 56E155D1
 P 2550 2100
 F 0 "#PWR010" H 2550 1850 50  0001 C CNN
@@ -201,7 +212,7 @@ F 3 "" H 2550 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR011
+L GND #PWR011
 U 1 1 56E1560E
 P 2800 2100
 F 0 "#PWR011" H 2800 1850 50  0001 C CNN
@@ -212,7 +223,7 @@ F 3 "" H 2800 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR012
+L GND #PWR012
 U 1 1 56E1564B
 P 3800 2100
 F 0 "#PWR012" H 3800 1850 50  0001 C CNN
@@ -223,7 +234,7 @@ F 3 "" H 3800 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 56E15651
 P 4050 2100
 F 0 "#PWR013" H 4050 1850 50  0001 C CNN
@@ -244,15 +255,15 @@ Wire Wire Line
 Wire Wire Line
 	4050 2000 4050 2100
 Wire Wire Line
-	3700 1700 3800 1700
+	3700 1700 5000 1700
 Connection ~ 3800 1700
 Wire Wire Line
-	2900 1700 2800 1700
+	2900 1700 2300 1700
 Connection ~ 2800 1700
 Connection ~ 4050 1700
 Connection ~ 2550 1700
 $Comp
-L ventirad-rescue:D_Schottky D1
+L D_Schottky D1
 U 1 1 56E17676
 P 2150 1700
 F 0 "D1" H 2350 1650 50  0000 C CNN
@@ -264,7 +275,7 @@ F 3 "" H 2150 1700 60  0000 C CNN
 $EndComp
 Connection ~ 2350 1700
 $Comp
-L ventirad-rescue:CONN_01X02 P1
+L CONN_01X02 P1
 U 1 1 56E183B4
 P 1750 1750
 F 0 "P1" H 1750 1600 50  0000 C CNN
@@ -277,7 +288,7 @@ $EndComp
 Wire Wire Line
 	2000 1700 1950 1700
 $Comp
-L ventirad-rescue:GND #PWR014
+L GND #PWR014
 U 1 1 56E18A24
 P 1950 2050
 F 0 "#PWR014" H 1950 1800 50  0001 C CNN
@@ -294,7 +305,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 3850 4100 3850
 $Comp
-L ventirad-rescue:CONN_01X03 P4
+L CONN_01X03 P4
 U 1 1 56E1BA65
 P 3100 3350
 F 0 "P4" H 3100 3550 50  0000 C CNN
@@ -305,7 +316,7 @@ F 3 "" H 3100 3350 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X03 P5
+L CONN_01X03 P5
 U 1 1 56E1BB24
 P 3100 3750
 F 0 "P5" H 3100 3950 50  0000 C CNN
@@ -316,7 +327,7 @@ F 3 "" H 3100 3750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X03 P6
+L CONN_01X03 P6
 U 1 1 56E1BE88
 P 3100 4200
 F 0 "P6" H 3100 4400 50  0000 C CNN
@@ -327,7 +338,7 @@ F 3 "" H 3100 4200 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X03 P7
+L CONN_01X03 P7
 U 1 1 56E1BE8E
 P 3100 4600
 F 0 "P7" H 3100 4800 50  0000 C CNN
@@ -338,7 +349,7 @@ F 3 "" H 3100 4600 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X03 P3
+L CONN_01X03 P3
 U 1 1 56E1BF44
 P 3100 2950
 F 0 "P3" H 3100 3150 50  0000 C CNN
@@ -349,7 +360,7 @@ F 3 "" H 3100 2950 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR015
+L GND #PWR015
 U 1 1 56E1C772
 P 3350 3450
 F 0 "#PWR015" H 3350 3200 50  0001 C CNN
@@ -360,7 +371,7 @@ F 3 "" H 3350 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR016
+L GND #PWR016
 U 1 1 56E1CA4E
 P 3350 3050
 F 0 "#PWR016" H 3350 2800 50  0001 C CNN
@@ -371,7 +382,7 @@ F 3 "" H 3350 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR017
+L GND #PWR017
 U 1 1 56E1CA93
 P 3350 3850
 F 0 "#PWR017" H 3350 3600 50  0001 C CNN
@@ -382,7 +393,7 @@ F 3 "" H 3350 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR018
+L GND #PWR018
 U 1 1 56E1CAD8
 P 3350 4300
 F 0 "#PWR018" H 3350 4050 50  0001 C CNN
@@ -393,7 +404,7 @@ F 3 "" H 3350 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR019
+L GND #PWR019
 U 1 1 56E1CB1D
 P 3350 4700
 F 0 "#PWR019" H 3350 4450 50  0001 C CNN
@@ -428,7 +439,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 3550 3450 3750
 $Comp
-L ventirad-rescue:CONN_01X03 P2
+L CONN_01X03 P2
 U 1 1 56E21B71
 P 3100 2550
 F 0 "P2" H 3100 2750 50  0000 C CNN
@@ -439,7 +450,7 @@ F 3 "" H 3100 2550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR020
+L GND #PWR020
 U 1 1 56E21B77
 P 3350 2650
 F 0 "#PWR020" H 3350 2400 50  0001 C CNN
@@ -477,7 +488,7 @@ Text Notes 10600 7650 0    60   ~ 0
 Text Notes 7000 7050 0    60   ~ 0
 ARDUINO BASED CONTROL BOARD\n- 6 ADC/analog input with 5V power supply\n- 6 pwm output any voltage, 1/60V 0,1/3 Amp\n- 6 digital bufferized inverted output  0-5V low current\n- 1 I2C I/O\n
 $Comp
-L ventirad-rescue:Q_PMOS_GDS Q8
+L Q_PMOS_GDS Q8
 U 1 1 56E280FF
 P 9100 4250
 F 0 "Q8" H 9050 4150 50  0000 R CNN
@@ -488,7 +499,7 @@ F 3 "" H 9100 4250 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:R R18
+L R R18
 U 1 1 56E28105
 P 8550 4650
 F 0 "R18" V 8600 4450 50  0000 C CNN
@@ -499,7 +510,7 @@ F 3 "" H 8550 4650 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R17
+L R R17
 U 1 1 56E2810B
 P 8350 4500
 F 0 "R17" V 8430 4500 50  0000 C CNN
@@ -510,7 +521,7 @@ F 3 "" H 8350 4500 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:R R19
+L R R19
 U 1 1 56E28111
 P 8900 4050
 F 0 "R19" V 8800 4050 50  0000 C CNN
@@ -521,7 +532,7 @@ F 3 "" H 8900 4050 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CP C8
+L CP C8
 U 1 1 56E28117
 P 9200 4650
 F 0 "C8" H 9225 4750 50  0000 L CNN
@@ -532,7 +543,7 @@ F 3 "" H 9200 4650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR021
+L GND #PWR021
 U 1 1 56E2811D
 P 8550 4850
 F 0 "#PWR021" H 8550 4600 50  0001 C CNN
@@ -543,7 +554,7 @@ F 3 "" H 8550 4850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR022
+L GND #PWR022
 U 1 1 56E28123
 P 8900 4850
 F 0 "#PWR022" H 8900 4600 50  0001 C CNN
@@ -554,7 +565,7 @@ F 3 "" H 8900 4850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR023
+L GND #PWR023
 U 1 1 56E28129
 P 9200 4850
 F 0 "#PWR023" H 9200 4600 50  0001 C CNN
@@ -565,7 +576,7 @@ F 3 "" H 9200 4850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR024
+L GND #PWR024
 U 1 1 56E2812F
 P 9450 4850
 F 0 "#PWR024" H 9450 4600 50  0001 C CNN
@@ -576,7 +587,7 @@ F 3 "" H 9450 4850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:D_Schottky D5
+L D_Schottky D5
 U 1 1 56E28135
 P 9350 4300
 F 0 "D5" H 9550 4250 50  0000 C CNN
@@ -587,7 +598,7 @@ F 3 "" H 9350 4300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR025
+L GND #PWR025
 U 1 1 56E2813B
 P 9350 4050
 F 0 "#PWR025" H 9350 3800 50  0001 C CNN
@@ -598,13 +609,15 @@ F 3 "" H 9350 4050 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8900 4200 8900 4250
+	8900 4200 8900 4300
 Connection ~ 8900 4250
 Wire Wire Line
 	9200 4450 9200 4500
 Wire Wire Line
-	8500 4500 8550 4500
+	8500 4500 8600 4500
 Connection ~ 8550 4500
+Wire Wire Line
+	10150 3900 8900 3900
 Wire Wire Line
 	9200 3900 9200 4050
 Wire Wire Line
@@ -614,7 +627,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 4800 8550 4850
 Wire Wire Line
-	9200 4450 9350 4450
+	9200 4450 9450 4450
 Connection ~ 9350 4450
 Wire Wire Line
 	9450 4550 9450 4850
@@ -622,7 +635,7 @@ Wire Wire Line
 	9350 4050 9350 4150
 Connection ~ 9200 3900
 $Comp
-L ventirad-rescue:Q_PMOS_GDS Q12
+L Q_PMOS_GDS Q12
 U 1 1 56E2956E
 P 10500 5750
 F 0 "Q12" H 10450 5650 50  0000 R CNN
@@ -633,7 +646,7 @@ F 3 "" H 10500 5750 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:R R24
+L R R24
 U 1 1 56E29574
 P 9950 6150
 F 0 "R24" V 10000 5950 50  0000 C CNN
@@ -644,7 +657,7 @@ F 3 "" H 9950 6150 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R23
+L R R23
 U 1 1 56E2957A
 P 9750 6000
 F 0 "R23" V 9830 6000 50  0000 C CNN
@@ -655,7 +668,7 @@ F 3 "" H 9750 6000 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:R R25
+L R R25
 U 1 1 56E29580
 P 10300 5550
 F 0 "R25" V 10200 5550 50  0000 C CNN
@@ -666,7 +679,7 @@ F 3 "" H 10300 5550 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CP C10
+L CP C10
 U 1 1 56E29586
 P 10600 6150
 F 0 "C10" H 10625 6250 50  0000 L CNN
@@ -677,7 +690,7 @@ F 3 "" H 10600 6150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR026
+L GND #PWR026
 U 1 1 56E2958C
 P 9950 6350
 F 0 "#PWR026" H 9950 6100 50  0001 C CNN
@@ -688,7 +701,7 @@ F 3 "" H 9950 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR027
+L GND #PWR027
 U 1 1 56E29592
 P 10300 6350
 F 0 "#PWR027" H 10300 6100 50  0001 C CNN
@@ -699,7 +712,7 @@ F 3 "" H 10300 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR028
+L GND #PWR028
 U 1 1 56E29598
 P 10600 6350
 F 0 "#PWR028" H 10600 6100 50  0001 C CNN
@@ -710,7 +723,7 @@ F 3 "" H 10600 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR029
+L GND #PWR029
 U 1 1 56E2959E
 P 10850 6350
 F 0 "#PWR029" H 10850 6100 50  0001 C CNN
@@ -721,7 +734,7 @@ F 3 "" H 10850 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:D_Schottky D7
+L D_Schottky D7
 U 1 1 56E295A4
 P 10750 5800
 F 0 "D7" H 10950 5750 50  0000 C CNN
@@ -732,7 +745,7 @@ F 3 "" H 10750 5800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR030
+L GND #PWR030
 U 1 1 56E295AA
 P 10750 5550
 F 0 "#PWR030" H 10750 5300 50  0001 C CNN
@@ -743,15 +756,15 @@ F 3 "" H 10750 5550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10300 5700 10300 5750
+	10300 5700 10300 5800
 Connection ~ 10300 5750
 Wire Wire Line
 	10600 5950 10600 6000
 Wire Wire Line
-	9900 6000 9950 6000
+	9900 6000 10000 6000
 Connection ~ 9950 6000
 Wire Wire Line
-	11050 5400 10600 5400
+	11050 5400 10300 5400
 Wire Wire Line
 	10600 5400 10600 5550
 Wire Wire Line
@@ -761,7 +774,7 @@ Wire Wire Line
 Wire Wire Line
 	9950 6300 9950 6350
 Wire Wire Line
-	10600 5950 10750 5950
+	10600 5950 10850 5950
 Connection ~ 10750 5950
 Wire Wire Line
 	10850 6050 10850 6350
@@ -769,7 +782,7 @@ Wire Wire Line
 	10750 5550 10750 5650
 Connection ~ 10600 5400
 $Comp
-L ventirad-rescue:Q_PMOS_GDS Q10
+L Q_PMOS_GDS Q10
 U 1 1 56E29E04
 P 9800 5000
 F 0 "Q10" H 9750 4900 50  0000 R CNN
@@ -780,7 +793,7 @@ F 3 "" H 9800 5000 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:R R21
+L R R21
 U 1 1 56E29E0A
 P 9250 5400
 F 0 "R21" V 9300 5200 50  0000 C CNN
@@ -791,7 +804,7 @@ F 3 "" H 9250 5400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R20
+L R R20
 U 1 1 56E29E10
 P 9050 5250
 F 0 "R20" V 9130 5250 50  0000 C CNN
@@ -802,7 +815,7 @@ F 3 "" H 9050 5250 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:R R22
+L R R22
 U 1 1 56E29E16
 P 9600 4800
 F 0 "R22" V 9500 4800 50  0000 C CNN
@@ -813,7 +826,7 @@ F 3 "" H 9600 4800 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CP C9
+L CP C9
 U 1 1 56E29E1C
 P 9900 5400
 F 0 "C9" H 9925 5500 50  0000 L CNN
@@ -824,7 +837,7 @@ F 3 "" H 9900 5400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR031
+L GND #PWR031
 U 1 1 56E29E22
 P 9250 5600
 F 0 "#PWR031" H 9250 5350 50  0001 C CNN
@@ -835,7 +848,7 @@ F 3 "" H 9250 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR032
+L GND #PWR032
 U 1 1 56E29E28
 P 9600 5600
 F 0 "#PWR032" H 9600 5350 50  0001 C CNN
@@ -846,7 +859,7 @@ F 3 "" H 9600 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR033
+L GND #PWR033
 U 1 1 56E29E2E
 P 9900 5600
 F 0 "#PWR033" H 9900 5350 50  0001 C CNN
@@ -857,7 +870,7 @@ F 3 "" H 9900 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR034
+L GND #PWR034
 U 1 1 56E29E34
 P 10150 5600
 F 0 "#PWR034" H 10150 5350 50  0001 C CNN
@@ -868,7 +881,7 @@ F 3 "" H 10150 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:D_Schottky D6
+L D_Schottky D6
 U 1 1 56E29E3A
 P 10050 5050
 F 0 "D6" H 10250 5000 50  0000 C CNN
@@ -879,7 +892,7 @@ F 3 "" H 10050 5050 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR035
+L GND #PWR035
 U 1 1 56E29E40
 P 10050 4800
 F 0 "#PWR035" H 10050 4550 50  0001 C CNN
@@ -890,13 +903,15 @@ F 3 "" H 10050 4800 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9600 4950 9600 5000
+	9600 4950 9600 5050
 Connection ~ 9600 5000
 Wire Wire Line
 	9900 5200 9900 5250
 Wire Wire Line
-	9200 5250 9250 5250
+	9200 5250 9300 5250
 Connection ~ 9250 5250
+Wire Wire Line
+	10850 4650 9600 4650
 Wire Wire Line
 	9900 4650 9900 4800
 Wire Wire Line
@@ -906,7 +921,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 5550 9250 5600
 Wire Wire Line
-	9900 5200 10050 5200
+	9900 5200 10150 5200
 Connection ~ 10050 5200
 Wire Wire Line
 	10150 5300 10150 5600
@@ -914,7 +929,7 @@ Wire Wire Line
 	10050 4800 10050 4900
 Connection ~ 9900 4650
 $Comp
-L ventirad-rescue:Q_PMOS_GDS Q2
+L Q_PMOS_GDS Q2
 U 1 1 56E2B062
 P 7000 2000
 F 0 "Q2" H 6950 1900 50  0000 R CNN
@@ -925,7 +940,7 @@ F 3 "" H 7000 2000 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:R R9
+L R R9
 U 1 1 56E2B068
 P 6450 2400
 F 0 "R9" V 6500 2200 50  0000 C CNN
@@ -936,7 +951,7 @@ F 3 "" H 6450 2400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R8
+L R R8
 U 1 1 56E2B06E
 P 6250 2250
 F 0 "R8" V 6330 2250 50  0000 C CNN
@@ -947,7 +962,7 @@ F 3 "" H 6250 2250 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:R R10
+L R R10
 U 1 1 56E2B074
 P 6800 1800
 F 0 "R10" V 6700 1800 50  0000 C CNN
@@ -958,7 +973,7 @@ F 3 "" H 6800 1800 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CP C5
+L CP C5
 U 1 1 56E2B07A
 P 7100 2400
 F 0 "C5" H 7125 2500 50  0000 L CNN
@@ -969,7 +984,7 @@ F 3 "" H 7100 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR036
+L GND #PWR036
 U 1 1 56E2B080
 P 6450 2600
 F 0 "#PWR036" H 6450 2350 50  0001 C CNN
@@ -980,7 +995,7 @@ F 3 "" H 6450 2600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR037
+L GND #PWR037
 U 1 1 56E2B086
 P 6800 2600
 F 0 "#PWR037" H 6800 2350 50  0001 C CNN
@@ -991,7 +1006,7 @@ F 3 "" H 6800 2600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR038
+L GND #PWR038
 U 1 1 56E2B08C
 P 7100 2600
 F 0 "#PWR038" H 7100 2350 50  0001 C CNN
@@ -1002,7 +1017,7 @@ F 3 "" H 7100 2600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR039
+L GND #PWR039
 U 1 1 56E2B092
 P 7350 2600
 F 0 "#PWR039" H 7350 2350 50  0001 C CNN
@@ -1013,7 +1028,7 @@ F 3 "" H 7350 2600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:D_Schottky D2
+L D_Schottky D2
 U 1 1 56E2B098
 P 7250 2050
 F 0 "D2" H 7450 2000 50  0000 C CNN
@@ -1024,7 +1039,7 @@ F 3 "" H 7250 2050 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR040
+L GND #PWR040
 U 1 1 56E2B09E
 P 7250 1800
 F 0 "#PWR040" H 7250 1550 50  0001 C CNN
@@ -1035,12 +1050,12 @@ F 3 "" H 7250 1800 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6800 1950 6800 2000
+	6800 1950 6800 2050
 Connection ~ 6800 2000
 Wire Wire Line
 	7100 2200 7100 2250
 Wire Wire Line
-	6400 2250 6450 2250
+	6400 2250 6500 2250
 Connection ~ 6450 2250
 Wire Wire Line
 	7100 1650 7100 1800
@@ -1051,7 +1066,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 2550 6450 2600
 Wire Wire Line
-	7100 2200 7250 2200
+	7100 2200 7350 2200
 Connection ~ 7250 2200
 Wire Wire Line
 	7350 2300 7350 2600
@@ -1059,7 +1074,7 @@ Wire Wire Line
 	7250 1800 7250 1900
 Connection ~ 7100 1650
 $Comp
-L ventirad-rescue:Q_PMOS_GDS Q6
+L Q_PMOS_GDS Q6
 U 1 1 56E2B0C0
 P 8400 3500
 F 0 "Q6" H 8350 3400 50  0000 R CNN
@@ -1070,7 +1085,7 @@ F 3 "" H 8400 3500 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:R R15
+L R R15
 U 1 1 56E2B0C6
 P 7850 3900
 F 0 "R15" V 7900 3700 50  0000 C CNN
@@ -1081,7 +1096,7 @@ F 3 "" H 7850 3900 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R14
+L R R14
 U 1 1 56E2B0CC
 P 7650 3750
 F 0 "R14" V 7730 3750 50  0000 C CNN
@@ -1092,7 +1107,7 @@ F 3 "" H 7650 3750 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:R R16
+L R R16
 U 1 1 56E2B0D2
 P 8200 3300
 F 0 "R16" V 8100 3300 50  0000 C CNN
@@ -1103,7 +1118,7 @@ F 3 "" H 8200 3300 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CP C7
+L CP C7
 U 1 1 56E2B0D8
 P 8500 3900
 F 0 "C7" H 8525 4000 50  0000 L CNN
@@ -1114,7 +1129,7 @@ F 3 "" H 8500 3900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR041
+L GND #PWR041
 U 1 1 56E2B0DE
 P 7850 4100
 F 0 "#PWR041" H 7850 3850 50  0001 C CNN
@@ -1125,7 +1140,7 @@ F 3 "" H 7850 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR042
+L GND #PWR042
 U 1 1 56E2B0E4
 P 8200 4100
 F 0 "#PWR042" H 8200 3850 50  0001 C CNN
@@ -1136,7 +1151,7 @@ F 3 "" H 8200 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR043
+L GND #PWR043
 U 1 1 56E2B0EA
 P 8500 4100
 F 0 "#PWR043" H 8500 3850 50  0001 C CNN
@@ -1147,7 +1162,7 @@ F 3 "" H 8500 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR044
+L GND #PWR044
 U 1 1 56E2B0F0
 P 8750 4100
 F 0 "#PWR044" H 8750 3850 50  0001 C CNN
@@ -1158,7 +1173,7 @@ F 3 "" H 8750 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:D_Schottky D4
+L D_Schottky D4
 U 1 1 56E2B0F6
 P 8650 3550
 F 0 "D4" H 8850 3500 50  0000 C CNN
@@ -1169,7 +1184,7 @@ F 3 "" H 8650 3550 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR045
+L GND #PWR045
 U 1 1 56E2B0FC
 P 8650 3300
 F 0 "#PWR045" H 8650 3050 50  0001 C CNN
@@ -1180,13 +1195,15 @@ F 3 "" H 8650 3300 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8200 3450 8200 3500
+	8200 3450 8200 3550
 Connection ~ 8200 3500
 Wire Wire Line
 	8500 3700 8500 3750
 Wire Wire Line
-	7800 3750 7850 3750
+	7800 3750 7900 3750
 Connection ~ 7850 3750
+Wire Wire Line
+	9450 3150 8200 3150
 Wire Wire Line
 	8500 3150 8500 3300
 Wire Wire Line
@@ -1196,7 +1213,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 4050 7850 4100
 Wire Wire Line
-	8500 3700 8650 3700
+	8500 3700 8750 3700
 Connection ~ 8650 3700
 Wire Wire Line
 	8750 3800 8750 4100
@@ -1204,7 +1221,7 @@ Wire Wire Line
 	8650 3300 8650 3400
 Connection ~ 8500 3150
 $Comp
-L ventirad-rescue:Q_PMOS_GDS Q4
+L Q_PMOS_GDS Q4
 U 1 1 56E2B11E
 P 7700 2750
 F 0 "Q4" H 7650 2650 50  0000 R CNN
@@ -1215,7 +1232,7 @@ F 3 "" H 7700 2750 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:R R12
+L R R12
 U 1 1 56E2B124
 P 7150 3150
 F 0 "R12" V 7200 2950 50  0000 C CNN
@@ -1226,7 +1243,7 @@ F 3 "" H 7150 3150 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R11
+L R R11
 U 1 1 56E2B12A
 P 6950 3000
 F 0 "R11" V 7030 3000 50  0000 C CNN
@@ -1237,7 +1254,7 @@ F 3 "" H 6950 3000 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:R R13
+L R R13
 U 1 1 56E2B130
 P 7500 2550
 F 0 "R13" V 7400 2550 50  0000 C CNN
@@ -1248,7 +1265,7 @@ F 3 "" H 7500 2550 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CP C6
+L CP C6
 U 1 1 56E2B136
 P 7800 3150
 F 0 "C6" H 7825 3250 50  0000 L CNN
@@ -1259,7 +1276,7 @@ F 3 "" H 7800 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR046
+L GND #PWR046
 U 1 1 56E2B13C
 P 7150 3350
 F 0 "#PWR046" H 7150 3100 50  0001 C CNN
@@ -1270,7 +1287,7 @@ F 3 "" H 7150 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR047
+L GND #PWR047
 U 1 1 56E2B142
 P 7500 3350
 F 0 "#PWR047" H 7500 3100 50  0001 C CNN
@@ -1281,7 +1298,7 @@ F 3 "" H 7500 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR048
+L GND #PWR048
 U 1 1 56E2B148
 P 7800 3350
 F 0 "#PWR048" H 7800 3100 50  0001 C CNN
@@ -1292,7 +1309,7 @@ F 3 "" H 7800 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR049
+L GND #PWR049
 U 1 1 56E2B14E
 P 8050 3350
 F 0 "#PWR049" H 8050 3100 50  0001 C CNN
@@ -1303,7 +1320,7 @@ F 3 "" H 8050 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:D_Schottky D3
+L D_Schottky D3
 U 1 1 56E2B154
 P 7950 2800
 F 0 "D3" H 8150 2750 50  0000 C CNN
@@ -1314,7 +1331,7 @@ F 3 "" H 7950 2800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR050
+L GND #PWR050
 U 1 1 56E2B15A
 P 7950 2550
 F 0 "#PWR050" H 7950 2300 50  0001 C CNN
@@ -1325,13 +1342,15 @@ F 3 "" H 7950 2550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7500 2700 7500 2750
+	7500 2700 7500 2800
 Connection ~ 7500 2750
 Wire Wire Line
 	7800 2950 7800 3000
 Wire Wire Line
-	7100 3000 7150 3000
+	7100 3000 7200 3000
 Connection ~ 7150 3000
+Wire Wire Line
+	8750 2400 7500 2400
 Wire Wire Line
 	7800 2400 7800 2550
 Wire Wire Line
@@ -1341,7 +1360,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3300 7150 3350
 Wire Wire Line
-	7800 2950 7950 2950
+	7800 2950 8050 2950
 Connection ~ 7950 2950
 Wire Wire Line
 	8050 3050 8050 3350
@@ -1366,8 +1385,12 @@ Wire Wire Line
 	5700 3200 6100 3200
 Wire Wire Line
 	6100 3200 6100 3750
+Connection ~ 8050 2400
+Connection ~ 8750 3150
+Connection ~ 9450 3900
+Connection ~ 10150 4650
 $Comp
-L ventirad-rescue:+5V #PWR051
+L +5V #PWR051
 U 1 1 56E324CE
 P 3350 4500
 F 0 "#PWR051" H 3350 4350 50  0001 C CNN
@@ -1378,7 +1401,7 @@ F 3 "" H 3350 4500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR052
+L +5V #PWR052
 U 1 1 56E327E2
 P 1400 1000
 F 0 "#PWR052" H 1400 850 50  0001 C CNN
@@ -1389,7 +1412,7 @@ F 3 "" H 1400 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:PWR_FLAG #FLG053
+L PWR_FLAG #FLG053
 U 1 1 56E32A2E
 P 1400 950
 F 0 "#FLG053" H 1400 1045 50  0001 C CNN
@@ -1402,7 +1425,7 @@ $EndComp
 Wire Wire Line
 	1400 950  1400 1000
 $Comp
-L ventirad-rescue:+5V #PWR054
+L +5V #PWR054
 U 1 1 56E32F90
 P 4450 1700
 F 0 "#PWR054" H 4450 1550 50  0001 C CNN
@@ -1413,7 +1436,7 @@ F 3 "" H 4450 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR055
+L +5V #PWR055
 U 1 1 56E340E0
 P 3350 2450
 F 0 "#PWR055" H 3350 2300 50  0001 C CNN
@@ -1424,7 +1447,7 @@ F 3 "" H 3350 2450 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR056
+L +5V #PWR056
 U 1 1 56E3412C
 P 3350 2850
 F 0 "#PWR056" H 3350 2700 50  0001 C CNN
@@ -1435,7 +1458,7 @@ F 3 "" H 3350 2850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR057
+L +5V #PWR057
 U 1 1 56E34178
 P 3350 3250
 F 0 "#PWR057" H 3350 3100 50  0001 C CNN
@@ -1446,7 +1469,7 @@ F 3 "" H 3350 3250 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR058
+L +5V #PWR058
 U 1 1 56E341C4
 P 3350 3650
 F 0 "#PWR058" H 3350 3500 50  0001 C CNN
@@ -1457,7 +1480,7 @@ F 3 "" H 3350 3650 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR059
+L +5V #PWR059
 U 1 1 56E34210
 P 3350 4100
 F 0 "#PWR059" H 3350 3950 50  0001 C CNN
@@ -1468,7 +1491,7 @@ F 3 "" H 3350 4100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR060
+L +5V #PWR060
 U 1 1 56E3556A
 P 3900 3650
 F 0 "#PWR060" H 3900 3500 50  0001 C CNN
@@ -1496,12 +1519,13 @@ Wire Wire Line
 	4300 4200 4300 3950
 Wire Wire Line
 	3450 3550 4300 3550
+Connection ~ 6800 1650
 Wire Wire Line
 	2900 1100 2900 1700
 Wire Wire Line
-	8050 1650 7100 1650
+	8050 1650 6800 1650
 $Comp
-L ventirad-rescue:CONN_01X02 P16
+L CONN_01X02 P16
 U 1 1 56E1AAF4
 P 11050 6000
 F 0 "P16" H 11050 5850 50  0000 C CNN
@@ -1512,7 +1536,7 @@ F 3 "" H 11050 6000 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X02 P11
+L CONN_01X02 P11
 U 1 1 56E1B0F5
 P 7550 2250
 F 0 "P11" H 7550 2100 50  0000 C CNN
@@ -1523,7 +1547,7 @@ F 3 "" H 7550 2250 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X02 P12
+L CONN_01X02 P12
 U 1 1 56E1B192
 P 8250 3000
 F 0 "P12" H 8250 2850 50  0000 C CNN
@@ -1534,7 +1558,7 @@ F 3 "" H 8250 3000 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X02 P13
+L CONN_01X02 P13
 U 1 1 56E1B21C
 P 8950 3750
 F 0 "P13" H 8950 3600 50  0000 C CNN
@@ -1545,7 +1569,7 @@ F 3 "" H 8950 3750 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X02 P14
+L CONN_01X02 P14
 U 1 1 56E1B2B1
 P 9650 4500
 F 0 "P14" H 9650 4350 50  0000 C CNN
@@ -1556,7 +1580,7 @@ F 3 "" H 9650 4500 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X02 P15
+L CONN_01X02 P15
 U 1 1 56E1B35B
 P 10350 5250
 F 0 "P15" H 10350 5100 50  0000 C CNN
@@ -1585,7 +1609,7 @@ Connection ~ 10850 1100
 Wire Wire Line
 	11050 1100 11050 5400
 $Comp
-L ventirad-rescue:R R1
+L R R1
 U 1 1 56E5A0BC
 P 4050 4400
 F 0 "R1" V 4130 4400 50  0000 C CNN
@@ -1596,7 +1620,7 @@ F 3 "" H 4050 4400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R31
+L R R31
 U 1 1 56E5A197
 P 4250 4400
 F 0 "R31" V 4330 4400 50  0000 C CNN
@@ -1607,7 +1631,7 @@ F 3 "" H 4250 4400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR061
+L +5V #PWR061
 U 1 1 56E5A5BA
 P 4150 4550
 F 0 "#PWR061" H 4150 4400 50  0001 C CNN
@@ -1617,10 +1641,11 @@ F 3 "" H 4150 4550 60  0000 C CNN
 	1    4150 4550
 	-1   0    0    1   
 $EndComp
+Connection ~ 5700 1100
 Wire Wire Line
-	5800 1100 6050 1100
+	5800 1100 11050 1100
 $Comp
-L ventirad-rescue:CONN_01X02 P9
+L CONN_01X02 P9
 U 1 1 56E9A1E3
 P 1750 700
 F 0 "P9" H 1750 850 50  0000 C CNN
@@ -1631,7 +1656,7 @@ F 3 "" H 1750 700 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR062
+L GND #PWR062
 U 1 1 56E9A480
 P 1950 1000
 F 0 "#PWR062" H 1950 750 50  0001 C CNN
@@ -1648,7 +1673,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 650  6050 650 
 $Comp
-L ventirad-rescue:CONN_01X02 P10
+L CONN_01X02 P10
 U 1 1 56E9AAC5
 P 5750 900
 F 0 "P10" H 5750 1050 50  0000 C CNN
@@ -1662,10 +1687,10 @@ Wire Wire Line
 	6050 650  6050 1100
 Connection ~ 6050 1100
 Wire Wire Line
-	4050 4550 4150 4550
+	4050 4550 4250 4550
 Connection ~ 4150 4550
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q11
+L Q_NMOS_GSD Q11
 U 1 1 56F9096A
 P 10200 6000
 F 0 "Q11" H 10500 6050 50  0000 R CNN
@@ -1676,7 +1701,7 @@ F 3 "" H 10200 6000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q9
+L Q_NMOS_GSD Q9
 U 1 1 56F90ABF
 P 9500 5250
 F 0 "Q9" H 9800 5300 50  0000 R CNN
@@ -1687,7 +1712,7 @@ F 3 "" H 9500 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q1
+L Q_NMOS_GSD Q1
 U 1 1 56F90372
 P 6700 2250
 F 0 "Q1" H 7000 2300 50  0000 R CNN
@@ -1698,7 +1723,7 @@ F 3 "" H 6700 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q7
+L Q_NMOS_GSD Q7
 U 1 1 56F90C9C
 P 8800 4500
 F 0 "Q7" H 9100 4550 50  0000 R CNN
@@ -1709,7 +1734,7 @@ F 3 "" H 8800 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q5
+L Q_NMOS_GSD Q5
 U 1 1 56F90F5D
 P 8100 3750
 F 0 "Q5" H 8400 3800 50  0000 R CNN
@@ -1720,7 +1745,7 @@ F 3 "" H 8100 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q3
+L Q_NMOS_GSD Q3
 U 1 1 56F910D8
 P 7400 3000
 F 0 "Q3" H 7700 3050 50  0000 R CNN
@@ -1731,9 +1756,9 @@ F 3 "" H 7400 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 3750 4050 3750
+	3850 3750 4300 3750
 $Comp
-L ventirad-rescue:R R2
+L R R2
 U 1 1 56FCE5C5
 P 1700 3350
 F 0 "R2" V 1750 3150 50  0000 C CNN
@@ -1744,7 +1769,7 @@ F 3 "" H 1700 3350 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R26
+L R R26
 U 1 1 56FCE5CB
 P 1900 3200
 F 0 "R26" V 1980 3200 50  0000 C CNN
@@ -1755,7 +1780,7 @@ F 3 "" H 1900 3200 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR063
+L GND #PWR063
 U 1 1 56FCE5D1
 P 1700 3550
 F 0 "#PWR063" H 1700 3300 50  0001 C CNN
@@ -1766,7 +1791,7 @@ F 3 "" H 1700 3550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR064
+L GND #PWR064
 U 1 1 56FCE5D7
 P 1350 3550
 F 0 "#PWR064" H 1350 3300 50  0001 C CNN
@@ -1777,14 +1802,14 @@ F 3 "" H 1350 3550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 3200 1700 3200
+	1750 3200 1650 3200
 Connection ~ 1700 3200
 Wire Wire Line
 	1350 3400 1350 3550
 Wire Wire Line
 	1700 3500 1700 3550
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q13
+L Q_NMOS_GSD Q13
 U 1 1 56FCE5E1
 P 1450 3200
 F 0 "Q13" H 1750 3250 50  0000 R CNN
@@ -1795,7 +1820,7 @@ F 3 "" H 1450 3200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R3
+L R R3
 U 1 1 56FCE990
 P 1700 4150
 F 0 "R3" V 1750 3950 50  0000 C CNN
@@ -1806,7 +1831,7 @@ F 3 "" H 1700 4150 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R27
+L R R27
 U 1 1 56FCE996
 P 1900 4000
 F 0 "R27" V 1980 4000 50  0000 C CNN
@@ -1817,7 +1842,7 @@ F 3 "" H 1900 4000 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR065
+L GND #PWR065
 U 1 1 56FCE99C
 P 1700 4350
 F 0 "#PWR065" H 1700 4100 50  0001 C CNN
@@ -1828,7 +1853,7 @@ F 3 "" H 1700 4350 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR066
+L GND #PWR066
 U 1 1 56FCE9A2
 P 1350 4350
 F 0 "#PWR066" H 1350 4100 50  0001 C CNN
@@ -1839,14 +1864,14 @@ F 3 "" H 1350 4350 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 4000 1700 4000
+	1750 4000 1650 4000
 Connection ~ 1700 4000
 Wire Wire Line
 	1350 4200 1350 4350
 Wire Wire Line
 	1700 4300 1700 4350
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q14
+L Q_NMOS_GSD Q14
 U 1 1 56FCE9AC
 P 1450 4000
 F 0 "Q14" H 1750 4050 50  0000 R CNN
@@ -1857,7 +1882,7 @@ F 3 "" H 1450 4000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R4
+L R R4
 U 1 1 56FCEB06
 P 1700 4950
 F 0 "R4" V 1750 4750 50  0000 C CNN
@@ -1868,7 +1893,7 @@ F 3 "" H 1700 4950 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R28
+L R R28
 U 1 1 56FCEB0C
 P 1900 4800
 F 0 "R28" V 1980 4800 50  0000 C CNN
@@ -1879,7 +1904,7 @@ F 3 "" H 1900 4800 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR067
+L GND #PWR067
 U 1 1 56FCEB12
 P 1700 5150
 F 0 "#PWR067" H 1700 4900 50  0001 C CNN
@@ -1890,7 +1915,7 @@ F 3 "" H 1700 5150 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR068
+L GND #PWR068
 U 1 1 56FCEB18
 P 1350 5150
 F 0 "#PWR068" H 1350 4900 50  0001 C CNN
@@ -1901,14 +1926,14 @@ F 3 "" H 1350 5150 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 4800 1700 4800
+	1750 4800 1650 4800
 Connection ~ 1700 4800
 Wire Wire Line
 	1350 5000 1350 5150
 Wire Wire Line
 	1700 5100 1700 5150
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q15
+L Q_NMOS_GSD Q15
 U 1 1 56FCEB22
 P 1450 4800
 F 0 "Q15" H 1750 4850 50  0000 R CNN
@@ -1919,7 +1944,7 @@ F 3 "" H 1450 4800 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R5
+L R R5
 U 1 1 56FCEB28
 P 1700 5750
 F 0 "R5" V 1750 5550 50  0000 C CNN
@@ -1930,7 +1955,7 @@ F 3 "" H 1700 5750 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R29
+L R R29
 U 1 1 56FCEB2E
 P 1900 5600
 F 0 "R29" V 1980 5600 50  0000 C CNN
@@ -1941,7 +1966,7 @@ F 3 "" H 1900 5600 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR069
+L GND #PWR069
 U 1 1 56FCEB34
 P 1700 5950
 F 0 "#PWR069" H 1700 5700 50  0001 C CNN
@@ -1952,7 +1977,7 @@ F 3 "" H 1700 5950 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR070
+L GND #PWR070
 U 1 1 56FCEB3A
 P 1350 5950
 F 0 "#PWR070" H 1350 5700 50  0001 C CNN
@@ -1963,14 +1988,14 @@ F 3 "" H 1350 5950 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 5600 1700 5600
+	1750 5600 1650 5600
 Connection ~ 1700 5600
 Wire Wire Line
 	1350 5800 1350 5950
 Wire Wire Line
 	1700 5900 1700 5950
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q16
+L Q_NMOS_GSD Q16
 U 1 1 56FCEB44
 P 1450 5600
 F 0 "Q16" H 1750 5650 50  0000 R CNN
@@ -1981,7 +2006,7 @@ F 3 "" H 1450 5600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R6
+L R R6
 U 1 1 56FCECBC
 P 1700 6550
 F 0 "R6" V 1750 6350 50  0000 C CNN
@@ -1992,7 +2017,7 @@ F 3 "" H 1700 6550 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R30
+L R R30
 U 1 1 56FCECC2
 P 1900 6400
 F 0 "R30" V 1980 6400 50  0000 C CNN
@@ -2003,7 +2028,7 @@ F 3 "" H 1900 6400 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR071
+L GND #PWR071
 U 1 1 56FCECC8
 P 1700 6750
 F 0 "#PWR071" H 1700 6500 50  0001 C CNN
@@ -2014,7 +2039,7 @@ F 3 "" H 1700 6750 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR072
+L GND #PWR072
 U 1 1 56FCECCE
 P 1350 6750
 F 0 "#PWR072" H 1350 6500 50  0001 C CNN
@@ -2025,14 +2050,14 @@ F 3 "" H 1350 6750 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 6400 1700 6400
+	1750 6400 1650 6400
 Connection ~ 1700 6400
 Wire Wire Line
 	1350 6600 1350 6750
 Wire Wire Line
 	1700 6700 1700 6750
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q17
+L Q_NMOS_GSD Q17
 U 1 1 56FCECD8
 P 1450 6400
 F 0 "Q17" H 1750 6450 50  0000 R CNN
@@ -2043,7 +2068,7 @@ F 3 "" H 1450 6400 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R7
+L R R7
 U 1 1 56FCECDE
 P 1700 7350
 F 0 "R7" V 1750 7150 50  0000 C CNN
@@ -2054,7 +2079,7 @@ F 3 "" H 1700 7350 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:R R32
+L R R32
 U 1 1 56FCECE4
 P 1900 7200
 F 0 "R32" V 1980 7200 50  0000 C CNN
@@ -2065,7 +2090,7 @@ F 3 "" H 1900 7200 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR073
+L GND #PWR073
 U 1 1 56FCECEA
 P 1700 7550
 F 0 "#PWR073" H 1700 7300 50  0001 C CNN
@@ -2076,7 +2101,7 @@ F 3 "" H 1700 7550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR074
+L GND #PWR074
 U 1 1 56FCECF0
 P 1350 7550
 F 0 "#PWR074" H 1350 7300 50  0001 C CNN
@@ -2087,14 +2112,14 @@ F 3 "" H 1350 7550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 7200 1700 7200
+	1750 7200 1650 7200
 Connection ~ 1700 7200
 Wire Wire Line
 	1350 7400 1350 7550
 Wire Wire Line
 	1700 7500 1700 7550
 $Comp
-L ventirad-rescue:Q_NMOS_GSD Q18
+L Q_NMOS_GSD Q18
 U 1 1 56FCECFA
 P 1450 7200
 F 0 "Q18" H 1750 7250 50  0000 R CNN
@@ -2109,7 +2134,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 3300 4650 5400
 $Comp
-L arduino_nano:Arduino_Nano U2
+L Arduino_Nano U2
 U 1 1 56F92D1D
 P 5000 3450
 F 0 "U2" H 5100 2450 70  0000 C CNN
@@ -2164,7 +2189,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 5700 4800 5700
 $Comp
-L ventirad-rescue:GND #PWR075
+L GND #PWR075
 U 1 1 56FD4DBB
 P 800 4750
 F 0 "#PWR075" H 800 4500 50  0001 C CNN
@@ -2175,7 +2200,7 @@ F 3 "" H 800 4750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X04 P17
+L CONN_01X04 P17
 U 1 1 56FD7183
 P 600 4550
 F 0 "P17" H 600 4800 50  0000 C CNN
@@ -2186,7 +2211,7 @@ F 3 "" H 600 4550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:CONN_01X04 P18
+L CONN_01X04 P18
 U 1 1 56FD720E
 P 600 5350
 F 0 "P18" H 600 5600 50  0000 C CNN
@@ -2197,7 +2222,7 @@ F 3 "" H 600 5350 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR076
+L GND #PWR076
 U 1 1 56FD7C0E
 P 800 5550
 F 0 "#PWR076" H 800 5300 50  0001 C CNN
@@ -2216,27 +2241,27 @@ Wire Wire Line
 Wire Wire Line
 	850  5400 850  7000
 Wire Wire Line
-	850  7000 1350 7000
+	850  7000 1550 7000
 Wire Wire Line
 	800  5300 950  5300
 Wire Wire Line
 	950  5300 950  6200
 Wire Wire Line
-	950  6200 1350 6200
+	950  6200 1550 6200
 Wire Wire Line
 	800  5200 1050 5200
 Wire Wire Line
 	1050 5200 1050 5400
 Wire Wire Line
-	1050 5400 1350 5400
+	1050 5400 1550 5400
 Wire Wire Line
-	800  4600 1350 4600
+	800  4600 1550 4600
 Wire Wire Line
 	800  4400 800  3000
 Wire Wire Line
-	800  3000 1350 3000
+	800  3000 1550 3000
 Wire Wire Line
-	900  3800 1350 3800
+	900  3800 1550 3800
 Wire Wire Line
 	900  3800 900  4500
 Wire Wire Line
@@ -2244,7 +2269,7 @@ Wire Wire Line
 Text Notes 8600 7300 0    60   ~ 0
 Design f6itu
 $Comp
-L ventirad-rescue:R R33
+L R R33
 U 1 1 56FDE9C7
 P 1700 3000
 F 0 "R33" V 1750 2800 50  0000 C CNN
@@ -2255,7 +2280,7 @@ F 3 "" H 1700 3000 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:R R38
+L R R38
 U 1 1 56FDEC52
 P 1700 7000
 F 0 "R38" V 1750 6800 50  0000 C CNN
@@ -2266,7 +2291,7 @@ F 3 "" H 1700 7000 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:R R37
+L R R37
 U 1 1 56FDED0B
 P 1700 6200
 F 0 "R37" V 1750 6000 50  0000 C CNN
@@ -2277,7 +2302,7 @@ F 3 "" H 1700 6200 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:R R36
+L R R36
 U 1 1 56FDEDD7
 P 1700 5400
 F 0 "R36" V 1750 5200 50  0000 C CNN
@@ -2288,7 +2313,7 @@ F 3 "" H 1700 5400 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:R R35
+L R R35
 U 1 1 56FDEE8C
 P 1700 4600
 F 0 "R35" V 1750 4400 50  0000 C CNN
@@ -2299,7 +2324,7 @@ F 3 "" H 1700 4600 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L ventirad-rescue:R R34
+L R R34
 U 1 1 56FDF0E2
 P 1700 3800
 F 0 "R34" V 1750 3600 50  0000 C CNN
@@ -2316,7 +2341,7 @@ Connection ~ 1350 5400
 Connection ~ 1350 6200
 Connection ~ 1350 7000
 $Comp
-L ventirad-rescue:+5V #PWR077
+L +5V #PWR077
 U 1 1 56FE0157
 P 2000 3000
 F 0 "#PWR077" H 2000 2850 50  0001 C CNN
@@ -2327,7 +2352,7 @@ F 3 "" H 2000 3000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR078
+L +5V #PWR078
 U 1 1 56FE0568
 P 1950 7000
 F 0 "#PWR078" H 1950 6850 50  0001 C CNN
@@ -2338,7 +2363,7 @@ F 3 "" H 1950 7000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR079
+L +5V #PWR079
 U 1 1 56FE05CB
 P 1950 6200
 F 0 "#PWR079" H 1950 6050 50  0001 C CNN
@@ -2349,7 +2374,7 @@ F 3 "" H 1950 6200 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR080
+L +5V #PWR080
 U 1 1 56FE062E
 P 1950 5400
 F 0 "#PWR080" H 1950 5250 50  0001 C CNN
@@ -2360,7 +2385,7 @@ F 3 "" H 1950 5400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR081
+L +5V #PWR081
 U 1 1 56FE0805
 P 1950 4600
 F 0 "#PWR081" H 1950 4450 50  0001 C CNN
@@ -2371,7 +2396,7 @@ F 3 "" H 1950 4600 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ventirad-rescue:+5V #PWR082
+L +5V #PWR082
 U 1 1 56FE0868
 P 2000 3800
 F 0 "#PWR082" H 2000 3650 50  0001 C CNN
@@ -2394,7 +2419,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 7000 1850 7000
 $Comp
-L ventirad-rescue:CONN_01X01 P19
+L CONN_01X01 P19
 U 1 1 56FD6D75
 P 4400 6600
 F 0 "P19" H 4400 6700 50  0000 C CNN
@@ -2405,7 +2430,7 @@ F 3 "" H 4400 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR083
+L GND #PWR083
 U 1 1 56FD7158
 P 4200 6650
 F 0 "#PWR083" H 4200 6400 50  0001 C CNN
@@ -2418,7 +2443,7 @@ $EndComp
 Wire Wire Line
 	4200 6600 4200 6650
 $Comp
-L ventirad-rescue:CONN_01X01 P20
+L CONN_01X01 P20
 U 1 1 56FD741C
 P 5100 6650
 F 0 "P20" H 5100 6750 50  0000 C CNN
@@ -2429,7 +2454,7 @@ F 3 "" H 5100 6650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR084
+L GND #PWR084
 U 1 1 56FD7422
 P 4900 6700
 F 0 "#PWR084" H 4900 6450 50  0001 C CNN
@@ -2442,7 +2467,7 @@ $EndComp
 Wire Wire Line
 	4900 6650 4900 6700
 $Comp
-L ventirad-rescue:C C11
+L C C11
 U 1 1 56FF7E80
 P 7100 1500
 F 0 "C11" H 7125 1600 50  0000 L CNN
@@ -2453,7 +2478,7 @@ F 3 "" H 7100 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C12
+L C C12
 U 1 1 56FF7F73
 P 7800 2250
 F 0 "C12" H 7825 2350 50  0000 L CNN
@@ -2464,7 +2489,7 @@ F 3 "" H 7800 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C13
+L C C13
 U 1 1 56FF806D
 P 8500 3000
 F 0 "C13" H 8525 3100 50  0000 L CNN
@@ -2475,7 +2500,7 @@ F 3 "" H 8500 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C14
+L C C14
 U 1 1 56FF815C
 P 9200 3750
 F 0 "C14" H 9225 3850 50  0000 L CNN
@@ -2486,7 +2511,7 @@ F 3 "" H 9200 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C15
+L C C15
 U 1 1 56FF8246
 P 9900 4500
 F 0 "C15" H 9925 4600 50  0000 L CNN
@@ -2497,7 +2522,7 @@ F 3 "" H 9900 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:C C16
+L C C16
 U 1 1 56FF8311
 P 10600 5250
 F 0 "C16" H 10625 5350 50  0000 L CNN
@@ -2508,7 +2533,7 @@ F 3 "" H 10600 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR085
+L GND #PWR085
 U 1 1 56FF83E7
 P 10600 5050
 F 0 "#PWR085" H 10600 4800 50  0001 C CNN
@@ -2519,7 +2544,7 @@ F 3 "" H 10600 5050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR086
+L GND #PWR086
 U 1 1 56FF84C3
 P 7100 1300
 F 0 "#PWR086" H 7100 1050 50  0001 C CNN
@@ -2530,7 +2555,7 @@ F 3 "" H 7100 1300 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR087
+L GND #PWR087
 U 1 1 56FF85F8
 P 7800 2050
 F 0 "#PWR087" H 7800 1800 50  0001 C CNN
@@ -2541,7 +2566,7 @@ F 3 "" H 7800 2050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR088
+L GND #PWR088
 U 1 1 56FF8663
 P 8500 2800
 F 0 "#PWR088" H 8500 2550 50  0001 C CNN
@@ -2552,7 +2577,7 @@ F 3 "" H 8500 2800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR089
+L GND #PWR089
 U 1 1 56FF86CE
 P 9200 3550
 F 0 "#PWR089" H 9200 3300 50  0001 C CNN
@@ -2563,7 +2588,7 @@ F 3 "" H 9200 3550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ventirad-rescue:GND #PWR090
+L GND #PWR090
 U 1 1 56FF8739
 P 9900 4300
 F 0 "#PWR090" H 9900 4050 50  0001 C CNN
@@ -2608,7 +2633,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 4500 3300 4500
 Wire Wire Line
-	4300 3650 4250 3650
+	4300 3650 4100 3650
 Wire Wire Line
 	4100 3650 4100 3850
 Text Notes 4750 3800 0    60   ~ 0
@@ -2647,114 +2672,4 @@ Wire Wire Line
 	5900 3100 5900 3000
 Wire Wire Line
 	5900 3000 6800 3000
-Wire Wire Line
-	3800 1700 4050 1700
-Wire Wire Line
-	2800 1700 2550 1700
-Wire Wire Line
-	4050 1700 4450 1700
-Wire Wire Line
-	2550 1700 2350 1700
-Wire Wire Line
-	2350 1700 2300 1700
-Wire Wire Line
-	8900 4250 8900 4300
-Wire Wire Line
-	8550 4500 8600 4500
-Wire Wire Line
-	9350 4450 9450 4450
-Wire Wire Line
-	9200 3900 8900 3900
-Wire Wire Line
-	10300 5750 10300 5800
-Wire Wire Line
-	9950 6000 10000 6000
-Wire Wire Line
-	10750 5950 10850 5950
-Wire Wire Line
-	10600 5400 10300 5400
-Wire Wire Line
-	9600 5000 9600 5050
-Wire Wire Line
-	9250 5250 9300 5250
-Wire Wire Line
-	10050 5200 10150 5200
-Wire Wire Line
-	9900 4650 9600 4650
-Wire Wire Line
-	6800 2000 6800 2050
-Wire Wire Line
-	6450 2250 6500 2250
-Wire Wire Line
-	7250 2200 7350 2200
-Wire Wire Line
-	7100 1650 6800 1650
-Wire Wire Line
-	8200 3500 8200 3550
-Wire Wire Line
-	7850 3750 7900 3750
-Wire Wire Line
-	8650 3700 8750 3700
-Wire Wire Line
-	8500 3150 8200 3150
-Wire Wire Line
-	7500 2750 7500 2800
-Wire Wire Line
-	7150 3000 7200 3000
-Wire Wire Line
-	7950 2950 8050 2950
-Wire Wire Line
-	7800 2400 7500 2400
-Wire Wire Line
-	4450 1700 5000 1700
-Wire Wire Line
-	8050 1100 8750 1100
-Wire Wire Line
-	8750 1100 9450 1100
-Wire Wire Line
-	9450 1100 10150 1100
-Wire Wire Line
-	10150 1100 10850 1100
-Wire Wire Line
-	10850 1100 11050 1100
-Wire Wire Line
-	6050 1100 8050 1100
-Wire Wire Line
-	4150 4550 4250 4550
-Wire Wire Line
-	1700 3200 1650 3200
-Wire Wire Line
-	1700 4000 1650 4000
-Wire Wire Line
-	1700 4800 1650 4800
-Wire Wire Line
-	1700 5600 1650 5600
-Wire Wire Line
-	1700 6400 1650 6400
-Wire Wire Line
-	1700 7200 1650 7200
-Wire Wire Line
-	1350 3000 1550 3000
-Wire Wire Line
-	1350 3800 1550 3800
-Wire Wire Line
-	1350 4600 1550 4600
-Wire Wire Line
-	1350 5400 1550 5400
-Wire Wire Line
-	1350 6200 1550 6200
-Wire Wire Line
-	1350 7000 1550 7000
-Wire Wire Line
-	4250 3650 4100 3650
-Wire Wire Line
-	4050 3750 4300 3750
-Wire Wire Line
-	9200 3900 10150 3900
-Wire Wire Line
-	9900 4650 10850 4650
-Wire Wire Line
-	8500 3150 9450 3150
-Wire Wire Line
-	7800 2400 8750 2400
 $EndSCHEMATC

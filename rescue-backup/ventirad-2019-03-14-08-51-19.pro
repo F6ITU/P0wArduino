@@ -1,4 +1,4 @@
-update=14/03/2019 08:51:27
+update=23/08/2018 10:03:00
 version=1
 last_client=kicad
 [pcbnew]
@@ -38,3 +38,12 @@ LabSize=60
 [eeschema]
 version=1
 LibDir=
+[eeschema/libraries]
+LibName1=ventirad-rescue
+LibName2=Libs/78M05/78M05G
+LibName3=Libs/Arduino/arduino_nano
+LibName4=C:/Users/Marco/Documents/Kicad/Kicad/kicad-symbols-master/Device
+LibName5=C:/Users/Marco/Documents/Kicad/Kicad/kicad-symbols-master/Connector_Generic
+LibName6=C:/Users/Marco/Documents/Kicad/Kicad/kicad-symbols-master/power
+LibName7=C:/Users/Marco/Documents/Kicad/Kicad/kicad-symbols-master/Regulator_Linear
+LibName8=C:/Users/Marco/Documents/Kicad/Kicad/kicad-symbols-master/Transistor_FET
